@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>VP Travel</title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<!-- Font awesome -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+			integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<!-- JQuery -->
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+			integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<a href="../index.html"
+					><h1 class="logo-text"><span>VP</span>Travel</h1></a
+				>
+			</div>
+			<i class="fa-solid fa-bars menu-toggle"></i>
+			<ul class="navi">
+				<li>
+					<a href="../index.html">Home</a>
+					<!-- <ul>
+						<li><a href="#">Landing Page</a></li>
+						<li><a href="#">Team</a></li>
+					</ul> -->
+				</li>
+				<!-- <li><a href="#">Sign Up</a></li>
+				<li><a href="#">Login</a></li> -->
+				<li>
+					<a href="#VN">
+						Việt Nam
+						<i
+							class="fa-solid fa-chevron-down"
+							style="font-size: 0.8em"
+						></i
+					></a>
+					<ul>
+						<li><a href="#">Miền Bắc</a></li>
+						<li><a href="#">Miền Trung</a></li>
+						<li><a href="#">Miền Nam</a></li>
+					</ul>
+				</li>
+				<li><a href="#About">About</a></li>
+				<li><a href="#Contact">Contact</a></li>
+			</ul>
+		</header>
+
+		<div class="extra-fun">
+			<ul>
+				<li></li>
+				<li><a href="../login.html" class="swap-color">Login</a></li>
+				<!-- <li><a href="#">Sign Up</a></li> -->
+				<li>
+					<label>
+						<input type="checkbox" />
+						<ion-icon name="moon-outline" class="moon"></ion-icon>
+						<ion-icon name="sunny-outline" class="sun"></ion-icon>
+						<span class="toggle"></span>
+					</label>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Page Wrapper -->
+		<div class="page-wrapper">
+			<!-- Content -->
+			<div class="content clearfix">
+				<!-- Main Content -->
+				<div class="main-content">
+					<h1 class="recent-post-title swap-color">Recent Post</h1>
+
+					<div class="post">
+						<img
+							src="https://static.vinwonders.com/2022/06/vinwonders-nha-trang-the-gioi-nuoc-1536x1024.jpg"
+							alt=""
+							class="post-image"
+						/>
+						<div class="post-preview">
+							<h2>
+								<a href="../posts/single.html"
+									>VinWonders Nha Trang - Công viên giải trí của những
+									kỷ lục</a
+								>
+							</h2>
+							<i class="fa-regular fa-user" style="margin-right: 7px"></i
+							><span>Nguyen Huu Viet</span>
+							<i
+								class="fa-regular fa-calendar"
+								style="margin-right: 7px"
+							></i
+							><span>6 Apr 2024</span>
+
+							<p class="preview-text">
+								Tour VinWonders Nha Trang là hành trình trải nghiệm
+								tuyệt vời, đa màu sắc với hàng trăm hoạt động vui chơi,
+								giải trí đẳng cấp bên cảnh sắc thiên nhiên tuyệt đẹp của
+								vịnh biển thiên đường.
+							</p>
+							<a href="../posts/single.html" class="btn read-more"
+								>Read More</a
+							>
+						</div>
+					</div>
+
+					<div class="post">
+						<img
+							src="https://123tadi.com/wp-content/Uploads/2021/07/160450-chua-linh-ung-6.jpg"
+							alt=""
+							class="post-image"
+						/>
+						<div class="post-preview">
+							<h2>
+								<a href="../posts/single.html"
+									>Bán Đảo Sơn Trà - Đà Nẵng</a
+								>
+							</h2>
+							<i class="fa-regular fa-user" style="margin-right: 7px"></i
+							><span>Nguyen Huu Viet</span>
+							<i
+								class="fa-regular fa-calendar"
+								style="margin-right: 7px"
+							></i>
+							<span>6 Apr 2024</span>
+							<p class="preview-text">
+								Được mệnh danh là “lá phổi xanh của thành phố”, bán đảo
+								Sơn Trà được ví như viên ngọc quý mà thiên nhiên đã ban
+								tặng cho thành phố Đà Nẵng. Sơn Trà có không khí trong
+								lành, mát mẻ, cùng với hệ sinh thái động thực vật đa
+								dạng, đã làm nên sức hút rất lớn cho nơi này.
+							</p>
+							<a href="../posts/single.html" class="btn read-more"
+								>Read More</a
+							>
+						</div>
+					</div>
+				</div>
+				<!-- // Main Content -->
+
+				<div class="sidebar">
+					<div class="section search">
+						<h2 class="section-title">Search</h2>
+						<form action="index.html" method="post">
+							<input
+								type="text"
+								name="search-term"
+								class="text-input"
+								placeholder="Search.."
+							/>
+						</form>
+					</div>
+
+					<div class="section topics">
+						<h2 class="section-title">Topics</h2>
+						<ul>
+							<li><a href="#">Việt Nam</a></li>
+							<li><a href="#">Việt Nam</a></li>
+							<li><a href="#">Việt Nam</a></li>
+							<li><a href="#">Việt Nam</a></li>
+							<li><a href="#">Việt Nam</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Page topic -->
+			<div class="page-hot">
+				<h1 class="slider-title swap-color">More</h1>
+
+				<!-- Posts -->
+				<section class="post container">
+					<!-- Post Box 1 -->
+					<div class="post-box design">
+						<img
+							src="https://luxtour.com.vn/wp-content/uploads/2022/06/gioi-thieu-sapa-768x574.jpg"
+							alt=""
+							class="post-img"
+						/>
+						<h2 class="category">Miền Bắc</h2>
+						<a href="../posts/../posts/single.html" class="post-title"
+							>Sapa - Lào Cai</a
+						>
+						<span class="post-date">6 Apr 2024</span>
+						<p class="post-decription">
+							Nằm dưới chân dãy Hoàng Liên Sơn hùng vĩ và chỉ cách Hà Nội
+							5 - 6 giờ di chuyển bằng đường cao tốc, Sa Pa là điểm đến
+							lý tưởng quanh năm. Ngoài những thửa ruộng bậc thang vào
+							mùa lúa chín, Sa Pa còn hút khách nhờ vẻ đẹp của nhiều điểm
+							đến khác.
+						</p>
+						<!-- Profile -->
+						<div class="profile">
+							<img src="../img/hviet.jpg" alt="" class="profile-img" />
+							<span class="profile-name">Nguyễn Hữu Việt</span>
+						</div>
+					</div>
+					<!-- Post Box 2 -->
+					<div class="post-box tech">
+						<img
+							src="https://tse3.mm.bing.net/th?id=OIP.d_q-N7l-JqWDqRsqN3gGvgHaE8&pid=Api&P=0&h=220"
+							alt=""
+							class="post-img"
+						/>
+						<h2 class="category">Miền Trung</h2>
+						<a href="../posts/../posts/single.html" class="post-title"
+							>Biển Mỹ Khê - Đà Nẵng</a
+						>
+						<span class="post-date">6 Apr 2024</span>
+						<p class="post-decription">
+							Xứng đáng với danh xưng bãi biển quyến rũ nhất hành tinh,
+							Mỹ Khê đã khẳng định được sức hấp dẫn của mình với lượng
+							khách du lịch đông đảo quanh năm. Đến với bãi biển Mỹ Khê,
+							du khách không những có cơ hội hòa mình vào không gian mênh
+							mông của biển cả mà còn được tham gia nhiều hoạt động vô
+							cùng thú vị khác.
+						</p>
+						<!-- Profile -->
+						<div class="profile">
+							<img src="../img/hviet.jpg" alt="" class="profile-img" />
+							<span class="profile-name">Nguyễn Hữu Việt</span>
+						</div>
+					</div>
+					<!-- Post Box 3 -->
+					<div class="post-box mobile">
+						<img
+							src="https://bloganchoi.com/wp-content/uploads/2022/08/nha-tho-duc-ba-sai-gon.jpg"
+							alt=""
+							class="post-img"
+						/>
+						<h2 class="category">Miền Nam</h2>
+						<a href="../posts/../posts/single.html" class="post-title"
+							>Nhà thờ Đức Bà - TP Hồ Chí Minh</a
+						>
+						<span class="post-date">6 Apr 2024</span>
+						<p class="post-decription">
+							Nằm ở trung tâm Quận 1 (TP. Hồ Chí Minh), nhà thờ Đức Bà
+							Sài Gòn nổi bật với kiến trúc Pháp cổ, không gian rộng
+							thoáng từ bên ngoài tới bên trong thánh đường. Đây là địa
+							điểm mà du khách không thể bỏ qua khi ghé thăm thành phố Hồ
+							Chí Minh hoa lệ.
+						</p>
+						<!-- Profile -->
+						<div class="profile">
+							<img src="../img/hviet.jpg" alt="" class="profile-img" />
+							<span class="profile-name">A Phiên</span>
+						</div>
+					</div>
+					<!-- Post Box 4 -->
+					<div class="post-box design">
+						<img src="../img/HaLong.png" alt="" class="post-img" />
+						<h2 class="category">Miền Bắc</h2>
+						<a href="../posts/../posts/single.html" class="post-title"
+							>Hạ Long - Quảng Ninh</a
+						>
+						<span class="post-date">6 Apr 2024</span>
+						<p class="post-decription">
+							Hạ Long - Một trong những địa điểm du lịch ‘nghe thôi đã
+							biết đẹp’ tại khu vực phía Bắc. Sở hữu vịnh Hạ Long đẹp
+							‘nghiêng nước nghiêng thành’ cùng nhiều hang động và bãi
+							biển hấp dẫn, đây chính là địa điểm mà rất nhiều du khách
+							mong muốn ghé thăm một lần. Và những kinh nghiệm du lịch Hạ
+							Long dưới đây chắc chắn sẽ giúp cho chuyến du ngoạn của bạn
+							thêm phần hoàn hảo.
+						</p>
+						<!-- Profile -->
+						<div class="profile">
+							<img src="../img/hviet.jpg" alt="" class="profile-img" />
+							<span class="profile-name">Nguyễn Hữu Việt</span>
+						</div>
+					</div>
+					<!-- Post Box 5 -->
+					<div class="post-box tech">
+						<img
+							src="https://www.quangbinhtravel.vn/wp-content/uploads/2017/03/dong-phong-nha.jpg"
+							alt=""
+							class="post-img"
+						/>
+						<h2 class="category">Miền Trung</h2>
+						<a href="../posts/../posts/single.html" class="post-title"
+							>Phong Nha Kẻ Bàng - Quảng Bình</a
+						>
+						<span class="post-date">6 Apr 2024</span>
+						<p class="post-decription">
+							Du lịch Phong Nha Kẻ Bàng là sự lựa chọn hàng đầu của du
+							khách khi đến Quảng Bình. Phong Nha được ví như “chốn bồng
+							lai tiên cảnh” hay “hoàng cung trong lòng đất”. Với khung
+							cảnh thiên nhiên hoang sơ. Đẹp như một bức tranh thủy mặc
+							mà tạo hóa đã ban tặng cho người dân Quảng Bình. Chính vì
+							vậy Phong Nha kẻ Bàng trở thành điểm du lịch hấp dẫn du
+							khách trong và ngoài nước.
+						</p>
+						<!-- Profile -->
+						<div class="profile">
+							<img src="../img/hviet.jpg" alt="" class="profile-img" />
+							<span class="profile-name">Nguyễn Hữu Việt</span>
+						</div>
+					</div>
+					<!-- Post Box 6 -->
+					<div class="post-box mobile">
+						<img
+							src="https://www.vntrip.vn/cam-nang/wp-content/uploads/2018/09/dao-phu-quoc-kien-giang-vntrip1.jpg"
+							alt=""
+							class="post-img"
+						/>
+						<h2 class="category">Miền Nam</h2>
+						<a href="../posts/../posts/single.html" class="post-title"
+							>Phú Quốc - Kiên Giang</a
+						>
+						<span class="post-date">6 Apr 2024</span>
+						<p class="post-decription">
+							Đảo Phú Quốc nổi tiếng là địa điểm du lịch biển lớn nhất
+							Việt Nam, nơi đây luôn hấp dẫn du khách bởi vẻ đẹp hoang sơ
+							của những bãi tắm đẹp, cát trắng, nắng vàng. Ngoài ra nơi
+							đây còn được mẹ thiên nhiên ưu ái ban tặng cho nguồn hải
+							sản dồi dào, phong phú giúp cho đảo ngọc là điểm đến hấp
+							dẫn với du khách trong nước và quốc tế.
+						</p>
+						<!-- Profile -->
+						<div class="profile">
+							<img src="../img/hviet.jpg" alt="" class="profile-img" />
+							<span class="profile-name">A Phiên</span>
+						</div>
+					</div>
+					<!-- Post Box 7 -->
+					<div class="post-box design">
+						<img
+							src="https://cdn.vntrip.vn/cam-nang/wp-content/uploads/2017/06/du-lich-ba-vi-vuon-quoc-gia-2.jpg"
+							alt=""
+							class="post-img"
+						/>
+						<h2 class="category">Miền Bắc</h2>
+						<a href="../posts/../posts/single.html" class="post-title"
+							>Ba Vì - Hà Nội</a
+						>
+						<span class="post-date">6 Apr 2024</span>
+						<p class="post-decription">
+							Ba Vì là huyện thuộc vùng bán sơn địa, nằm về phía tây bắc
+							thủ đô Hà Nội. Phía đông giáp thị xã Sơn Tây, phía nam giáp
+							tỉnh Hòa Bình, phía tây giáp tỉnh Phú Thọ và phía Bắc giáp
+							tỉnh Vĩnh Phúc. Ba Vì được thiên nhiên ưu đãi ban tặng sơn
+							thuỷ hữu tình, với hệ sinh thái phong phú. Địa hình đa dạng
+							có cả núi, rừng, thác, suối, sông, hồ cùng các danh lam
+							thắng cảnh nổi tiếng.
+						</p>
+						<!-- Profile -->
+						<div class="profile">
+							<img src="../img/hviet.jpg" alt="" class="profile-img" />
+							<span class="profile-name">Nguyễn Hữu Việt</span>
+						</div>
+					</div>
+					<!-- Post Box 8 -->
+					<div class="post-box tech">
+						<a href="../posts/../posts/single.html">
+							<img
+								src="https://longdengiare.com/wp-content/uploads/2018/01/pho-den-long-hoi-an-01.jpg"
+								alt=""
+								class="post-img"
+							/>
+						</a>
+						<h2 class="category">Miền Trung</h2>
+						<a href="../posts/../posts/single.html" class="post-title"
+							>Phố cổ Hội An - Quảng Nam</a
+						>
+						<span class="post-date">6 Apr 2024</span>
+						<p class="post-decription">
+							Hội An là địa điểm du lịch nổi tiếng ở khu vực miền Trung
+							được nhiều du khách ghé thăm mỗi năm. Đến với Hội An, bạn
+							sẽ có dịp được chiêm ngưỡng những công trình kiến trúc cổ
+							xưa, mang đậm nét hoài cổ, cổ kính. Đặc biệt vào những dịp
+							Lễ, Tết hay rằm hàng tháng. Hội An tổ chức nhiều lễ hội với
+							các trò chơi dân gian truyền thống vô cùng đặc sắc.
+						</p>
+						<!-- Profile -->
+						<div class="profile">
+							<img src="../img/hviet.jpg" alt="" class="profile-img" />
+							<span class="profile-name">Nguyễn Hữu Việt</span>
+						</div>
+					</div>
+					<!-- Post Box 9 -->
+					<div class="post-box mobile">
+						<img
+							src="https://cdn.tgdd.vn/Files/2021/06/15/1360387/diem-danh-20-dia-diem-du-lich-vung-tau-doc-la-di-la-ghien-202309291614483823.jpg"
+							alt=""
+							class="post-img"
+						/>
+						<h2 class="category">Miền Nam</h2>
+						<a href="../posts/../posts/single.html" class="post-title"
+							>TP Hồ Chí Minh</a
+						>
+						<span class="post-date">6 Apr 2024</span>
+						<p class="post-decription">
+							Thành phố Hồ Chí Minh năng động, hiện đại và phát triển
+							nhất Việt Nam. Là điểm đến hấp dẫn thu hút lượng khách
+							trong nước và quốc tế. Du lịch thành phố Hồ Chí Minh sẽ đưa
+							du khách đến với những cảnh đẹp mới mẻ, thú vị và đặc biệt
+							là văn hóa ẩm thực cực kỳ phong phú.
+						</p>
+						<!-- Profile -->
+						<div class="profile">
+							<img src="../img/hviet.jpg" alt="" class="profile-img" />
+							<span class="profile-name">Nguyễn Hữu Việt</span>
+						</div>
+					</div>
+				</section>
+
+				<!-- Pagination -->
+				<div class="pagination">
+					<span class="first-page" onclick="changePage('first')"
+						><i class="fa-solid fa-angles-left"></i
+					></span>
+					<span class="prev-page" onclick="changePage('prev')"
+						><i class="fa-solid fa-angle-left"></i
+					></span>
+					<div class="page-numbers swap-color"></div>
+					<span class="next-page" onclick="changePage('next')"
+						><i class="fa-solid fa-angle-right"></i
+					></span>
+					<span class="last-page" onclick="changePage('last')"
+						><i class="fa-solid fa-angles-right"></i
+					></span>
+				</div>
+			</div>
+		</div>
+		<!-- Page Wrapper -->
+
+		<!-- Footer -->
+		<footer>
+			<div class="content">
+				<div class="top">
+					<div class="logo">
+						<h1 class="logo-text"><span>VP</span>Travel</h1>
+					</div>
+					<div class="media-icons">
+						<a href="https://www.facebook.com/viet.nguyenhuu.750983"
+							><i class="fa-brands fa-facebook-f"></i
+						></a>
+						<a href="#"><i class="fa-brands fa-twitter"></i></a>
+						<a href="https://www.instagram.com/huuviet119/"
+							><i class="fa-brands fa-instagram"></i
+						></a>
+						<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+						<a href="https://www.youtube.com/@VietHuu-ob3qg"
+							><i class="fa-brands fa-youtube"></i
+						></a>
+					</div>
+				</div>
+				<div class="link-boxes">
+					<ul class="box">
+						<li class="link-name">Company</li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Get started</a></li>
+					</ul>
+					<ul class="box">
+						<li class="link-name">Services</li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Get started</a></li>
+					</ul>
+					<ul class="box">
+						<li class="link-name">Company</li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Get started</a></li>
+					</ul>
+					<ul class="box">
+						<li class="link-name">Company</li>
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Contact us</a></li>
+						<li><a href="#">About us</a></li>
+						<li><a href="#">Get started</a></li>
+					</ul>
+					<ul class="box input-box">
+						<li class="link-name">Contact me</li>
+						<li><input type="text" placeholder="Enter your email" /></li>
+						<li><input type="button" value="Send" /></li>
+					</ul>
+				</div>
+			</div>
+			<div class="bottom-details">
+				<div class="bottom-text">
+					<span class="copyright-text">
+						Coppyright &#169; 2024 <a href="#">VPTravel.</a> All rights
+						reserved
+					</span>
+					<span class="policy-terms">
+						<a href="#">Privacy policy</a>
+						<a href="#">Terms & condition</a>
+					</span>
+				</div>
+			</div>
+		</footer>
+		<!-- // Footer -->
+
+		<script src="../js/scripts.js"></script>
+
+		<!-- Facebook -->
+		<script>
+			window.fbAsyncInit = function () {
+				FB.init({
+					appId: '1818848021950170',
+					xfbml: true,
+					version: 'v20.0',
+				});
+			};
+
+			(function (d, s, id) {
+				var js,
+					fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) {
+					return;
+				}
+				js = d.createElement(s);
+				js.id = id;
+				js.src = 'https://connect.facebook.net/vi_VN/sdk.js';
+				fjs.parentNode.insertBefore(js, fjs);
+			})(document, 'script', 'facebook-jssdk');
+		</script>
+
+		<!-- JQuery -->
+		<!-- JQuery Link -->
+		<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+		<!-- Ionicon -->
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+		></script>
+
+		<!-- Slick Carousel -->
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+		></script>
+	</body>
+</html>
