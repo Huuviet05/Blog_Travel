@@ -124,7 +124,6 @@ a {
 .text-input {
 	width: 130px;
 	outline: none;
-	border-radius: 5px;
 	margin-top: 10px;
 	border: 2px solid #ccc;
 	border-radius: 25px;
@@ -395,13 +394,18 @@ body {
 }
 
 .content .popular .post img {
-	height: 60px;
+	height: 65px;
 	width: 75px;
 	float: left;
 	margin-right: 10px;
 }
 
-.content .popular .post h4:hover {
+.content .popular .post h4 {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
+
+.content .popular .post a h4:hover {
 	color: #005255;
 }
 
@@ -424,7 +428,7 @@ body {
 }
 
 .content .main-content .post img:hover {
-	transform: scale(1.1);
+	transform: scale(1.08);
 }
 
 .content .main-content .post .post-image {
@@ -495,6 +499,43 @@ body {
 
 .content .sidebar .section.search {
 	margin-top: 95px;
+}
+
+/* Styles for the result-box */
+.content .sidebar .section.search .result-box {
+	width: 100%;
+	max-height: 200px;
+	overflow-y: scroll;
+	border-radius: 20px;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 1000;
+
+	margin-top: 5px;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.3s ease-in-out;
+}
+
+.content .sidebar .section.search .result-box ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px;
+}
+
+.content .sidebar .section.search .result-box li {
+	padding: 10px;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.content .sidebar .section.search .result-box li:last-child {
+	border-bottom: none;
+}
+
+.content .sidebar .section.search .result-box li:hover {
+	background-color: #f1f1f1;
 }
 
 .content .sidebar .section.topics ul {

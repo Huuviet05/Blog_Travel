@@ -13,6 +13,11 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<style>
+			h4:hover {
+				color: #005255;
+			}
+		</style>
 	</head>
 	<body>
 		<!-- Facebook Page Plugin -->
@@ -86,12 +91,14 @@
 		</div>
 
 		<!-- Page Wrapper -->
-		<div class="page-wrapper">
+		<div class="page-wrapper swap-color">
 			<!-- Content -->
 			<div class="content clearfix">
 				<!-- Main Content -->
-				<div class="main-content single">
-					<h1 class="post-title">This is the title of the Post</h1>
+				<div class="main-content single change-bg">
+					<h1 class="post-title swap-color">
+						This is the title of the Post
+					</h1>
 
 					<div class="post-content">
 						<p>
@@ -237,7 +244,7 @@
 				<!-- // Main Content -->
 
 				<div class="sidebar single">
-					<div class="section">
+					<div class="section change-bg">
 						<div
 							class="fb-page"
 							data-href="https://www.facebook.com/codingpoets/"
@@ -270,46 +277,63 @@
 						></div>
 					</div>
 
-					<div class="section popular">
-						<h2 class="section-title">Popular</h2>
+					<div class="section popular change-bg">
+						<h2 class="section-title swap-color">Popular</h2>
 						<div class="post clearfix">
 							<img src="../img/DNHue.png" alt="Hue" />
 							<a href="#" class="title"
-								><h4>How to overcome your fears</h4></a
+								><h4 class="swap-color">
+									Đại Nội Huế – Khám phá lịch sử chốn cung đình triều
+									Nguyễn
+								</h4></a
 							>
 						</div>
 						<div class="post clearfix">
-							<img src="../img/DNHue.png" alt="Hue" />
+							<img src="../img/EiffelTower.png" alt="" />
 							<a href="#" class="title"
-								><h4>How to overcome your fears</h4></a
+								><h4 class="swap-color">
+									Tháp Eiffel - Địa điểm du lịch lý tưởng trên đất Pháp
+								</h4></a
 							>
 						</div>
 						<div class="post clearfix">
-							<img src="../img/DNHue.png" alt="Hue" />
+							<img
+								src="https://123tadi.com/wp-content/Uploads/2021/07/160450-chua-linh-ung-6.jpg"
+								alt="Hue"
+							/>
 							<a href="#" class="title"
-								><h4>How to overcome your fears</h4></a
+								><h4 class="swap-color">
+									Bán Đảo Sơn Trà - Đà Nẵng
+								</h4></a
 							>
 						</div>
 						<div class="post clearfix">
-							<img src="../img/DNHue.png" alt="Hue" />
+							<img src="../img/Himalaya.png" alt="Hue" />
 							<a href="#" class="title"
-								><h4>How to overcome your fears</h4></a
+								><h4 class="swap-color">
+									Tour Nepal – Hành Trình Himalaya
+								</h4></a
 							>
 						</div>
 						<div class="post clearfix">
-							<img src="../img/DNHue.png" alt="Hue" />
+							<img
+								src="https://nhatbanchotoinhe.com/wp-content/uploads/2020/12/chua-chureito-08.jpg"
+								alt="Hue"
+							/>
 							<a href="#" class="title"
-								><h4>How to overcome your fears</h4></a
+								><h4 class="swap-color">
+									Chùa Chureito - Núi Phú Sỹ, Nhật Bản
+								</h4></a
 							>
 						</div>
 					</div>
-					<div class="section topics">
-						<h2 class="section-title">Topics</h2>
+					<div class="section topics change-bg">
+						<h2 class="section-title swap-color">Topics</h2>
 						<ul>
 							<li><a href="#">Việt Nam</a></li>
-							<li><a href="#">Việt Nam</a></li>
-							<li><a href="#">Việt Nam</a></li>
-							<li><a href="#">Việt Nam</a></li>
+							<li><a href="#">Miền Bắc</a></li>
+							<li><a href="#">Miền Trung</a></li>
+							<li><a href="#">Miền Nam</a></li>
 							<li><a href="#">Việt Nam</a></li>
 						</ul>
 					</div>
@@ -369,11 +393,11 @@
 						<li><a href="#">Get started</a></li>
 					</ul>
 					<ul class="box">
-						<li class="link-name">Company</li>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Contact us</a></li>
-						<li><a href="#">About us</a></li>
-						<li><a href="#">Get started</a></li>
+						<li class="link-name">Topics</li>
+						<li><a href="#">Việt Nam</a></li>
+						<li><a href="../topics/MienBac.html">Miền Bắc</a></li>
+						<li><a href="#">Miền Nam</a></li>
+						<li><a href="#">Miền Trung</a></li>
 					</ul>
 					<ul class="box">
 						<li class="link-name">Company</li>
@@ -454,6 +478,6 @@
 		></script>
 
 		<!-- Link to js -->
-		<script src="js/scripts.js"></script>
+		<script src="../js/scripts.js"></script>
 	</body>
 </html>

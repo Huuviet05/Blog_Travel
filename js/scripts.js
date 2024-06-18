@@ -63,8 +63,8 @@ $(document).ready(function () {
 // Light-Dark Mode
 const body = document.querySelector('body');
 const changeColor = document.querySelectorAll('.swap-color');
+const changeBg = document.querySelectorAll('.change-bg');
 const sliderTitles = document.querySelectorAll('.slider-title');
-const recentPostTitles = document.querySelectorAll('.recent-post-title');
 const checkbox = document.querySelector('input[type="checkbox"]');
 
 checkbox.addEventListener('change', function () {
@@ -72,10 +72,16 @@ checkbox.addEventListener('change', function () {
 		changeColor.forEach((title) => {
 			title.style.color = '#f8f8f8'; // Thay đổi màu sắc của thẻ h1 thành màu trắng (#fff)
 		});
-		body.style.background = '#2b2b2b'; // Thay đổi màu sắc background thành màu đỏ (#2b2b2b)
+		changeBg.forEach((element) => {
+			element.style.backgroundColor = '#3b3b3b'; // Change background color to dark
+		});
+		body.style.background = '#3b3b3b'; // Thay đổi màu sắc background thành màu đỏ (#2b2b2b)
 	} else {
 		changeColor.forEach((title) => {
 			title.style.color = '#444'; // Thay đổi màu sắc của thẻ h1 thành màu đen (#000)
+		});
+		changeBg.forEach((element) => {
+			element.style.backgroundColor = '#f8f8f8'; // Change background color to dark
 		});
 		body.style.background = '#f8f8f8'; // Thay đổi màu sắc background thành màu trắng (#f8f8f8)
 	}
@@ -183,3 +189,96 @@ function updatePagination(totalPages) {
 		lastButton.classList.remove('disabled');
 	}
 }
+
+// autocomplete - search
+
+let availableKeywords = [
+	{ keyword: 'Tháp Eiffel', url: '../posts/single.html' },
+	{ keyword: 'Đại Nội Huế', url: '../posts/single.html' },
+	{ keyword: 'Hawaii', url: '../posts/single.html' },
+	{
+		keyword: 'Tour Nepal – Hành Trình Himalaya',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Chùa Chureito - Núi Phú Sỹ, Nhật Bản',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'VinWonders Nha Trang - Công viên giải trí của những kỷ lục',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Bán Đảo Sơn Trà - Đà Nẵng',
+		url: '../posts/single.html',
+	},
+	{ keyword: 'Sapa - Lào Cai', url: '../posts/single.html' },
+	{ keyword: 'Biển Mỹ Khê - Đà Nẵng', url: '../posts/single.html' },
+	{
+		keyword: 'Nhà thờ Đức Bà - TP Hồ Chí Minh',
+		url: '../posts/single.html',
+	},
+	{ keyword: 'Hạ Long - Quảng Ninh', url: '../posts/single.html' },
+	{
+		keyword: 'Phong Nha Kẻ Bàng - Quảng Bình',
+		url: 'https://example.com/phong-nha-ke-bang',
+	},
+	{ keyword: 'Phú Quốc - Kiên Giang', url: '../posts/single.html' },
+	{ keyword: 'Ba Vì - Hà Nội', url: '../posts/single.html' },
+	{
+		keyword: 'Phố cổ Hội An - Quảng Nam',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Tượng Chúa Ki-tô Vua - Vũng Tàu',
+		url: '../posts/single.html',
+	},
+];
+
+const resultsBox = document.querySelector('.result-box');
+const inputBox = document.getElementById('input-box');
+
+inputBox.onkeyup = function () {
+	let result = [];
+	let input = inputBox.value;
+	if (input.length) {
+		result = availableKeywords.filter((keywordObj) => {
+			return keywordObj.keyword.toLowerCase().includes(input.toLowerCase());
+		});
+	}
+	display(result);
+};
+
+function display(result) {
+	if (result.length) {
+		const content = result
+			.map((keywordObj) => {
+				return `<li data-url="${keywordObj.url}">${keywordObj.keyword}</li>`;
+			})
+			.join(''); // Join array elements to form a single string
+		resultsBox.innerHTML = '<ul>' + content + '</ul>';
+		resultsBox.style.visibility = 'visible'; // Make the result box visible
+		resultsBox.style.opacity = '1'; // Make the result box fully opaque
+
+		// Add click event listener to each list item
+		const listItems = resultsBox.querySelectorAll('li');
+		listItems.forEach((item) => {
+			item.addEventListener('click', function () {
+				const url = this.getAttribute('data-url');
+				window.location.href = url; // Navigate to the URL
+			});
+		});
+	} else {
+		resultsBox.innerHTML = '';
+		resultsBox.style.visibility = 'hidden'; // Hide the result box
+		resultsBox.style.opacity = '0'; // Make the result box fully transparent
+	}
+}
+
+// Optional: Hide results when clicking outside of the input or results box
+document.addEventListener('click', function (event) {
+	if (!inputBox.contains(event.target) && !resultsBox.contains(event.target)) {
+		resultsBox.style.visibility = 'hidden';
+		resultsBox.style.opacity = '0';
+	}
+});
