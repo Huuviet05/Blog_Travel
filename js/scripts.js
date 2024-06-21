@@ -218,10 +218,10 @@ let availableKeywords = [
 		keyword: 'Nhà thờ Đức Bà - TP Hồ Chí Minh',
 		url: '../posts/single.html',
 	},
-	{ keyword: 'Hạ Long - Quảng Ninh', url: '../posts/single.html' },
+	{ keyword: 'Vịnh Hạ Long - Quảng Ninh', url: '../posts/single.html' },
 	{
 		keyword: 'Phong Nha Kẻ Bàng - Quảng Bình',
-		url: 'https://example.com/phong-nha-ke-bang',
+		url: '../posts/single.html',
 	},
 	{ keyword: 'Phú Quốc - Kiên Giang', url: '../posts/single.html' },
 	{ keyword: 'Ba Vì - Hà Nội', url: '../posts/single.html' },
@@ -231,6 +231,38 @@ let availableKeywords = [
 	},
 	{
 		keyword: 'Tượng Chúa Ki-tô Vua - Vũng Tàu',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Hồ Ba Bể – Bắc Kạn',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Đảo Cát Bà – Hải Phòng',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Bãi Biển Sầm Sơn - Thanh Hóa',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Bãi Biển Đồ Sơn - Hải Phòng',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Tam Đảo - Vĩnh Phúc',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Ba Vì - Hà Nội',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Tràng An - Ninh Bình',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Thác Bản Giốc - Cao Bằng',
 		url: '../posts/single.html',
 	},
 ];
@@ -281,4 +313,24 @@ document.addEventListener('click', function (event) {
 		resultsBox.style.visibility = 'hidden';
 		resultsBox.style.opacity = '0';
 	}
+});
+
+// Contact
+const inputs = document.querySelectorAll('.input');
+
+function focusFunc() {
+	let parent = this.parentNode;
+	parent.classList.add('focus');
+}
+
+function blurFunc() {
+	let parent = this.parentNode;
+	if (this.value == '') {
+		parent.classList.remove('focus');
+	}
+}
+
+inputs.forEach((input) => {
+	input.addEventListener('focus', focusFunc);
+	input.addEventListener('blur', blurFunc);
 });

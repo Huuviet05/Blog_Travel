@@ -31,7 +31,7 @@ body {
 }
 
 .container {
-	background: linear-gradient(to right, #040654, var(--mainColor));
+	background: linear-gradient(to right, var(--mainColor), #040654);
 	width: 60%;
 	display: grid;
 	place-content: center;

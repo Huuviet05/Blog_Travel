@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Single Post</title>
+		<title>Đại Nội Huế – Khám phá lịch sử chốn cung đình triều Nguyễn</title>
 		<link rel="stylesheet" href="../css/style.css" />
 		<!-- Font awesome -->
 		<link
@@ -17,6 +17,18 @@
 			h4:hover {
 				color: #005255;
 			}
+			h1,
+			h2,
+			h3,
+			h4 {
+				font-family: 'Segoe UI', sans-serif;
+			}
+			.img-post {
+				max-width: 100%; /* Đảm bảo ảnh không vượt quá chiều rộng của container */
+				height: auto; /* Đảm bảo tỷ lệ khung hình được giữ nguyên */
+				display: block; /* Tránh hiện tượng khoảng trắng dư thừa dưới ảnh */
+				margin: 0 auto; /* Căn giữa ảnh trong container */
+			}
 		</style>
 	</head>
 	<body>
@@ -26,17 +38,8 @@
 			async
 			defer
 			crossorigin="anonymous"
-			src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v20.0"
+			src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v20.0"
 			nonce="1YvS7MQa"
-		></script>
-		<script
-			async
-			defer
-			crossorigin="anonymous"
-			src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
-             &version={graph-api-version}
-             &appId={your-facebook-app-id}"
-			nonce="FOKrbAYI"
 		></script>
 		<header>
 			<div class="logo">
@@ -56,7 +59,7 @@
 				<!-- <li><a href="#">Sign Up</a></li>
 				<li><a href="#">Login</a></li> -->
 				<li>
-					<a href="#VN">
+					<a href="#">
 						Việt Nam
 						<i
 							class="fa-solid fa-chevron-down"
@@ -65,8 +68,8 @@
 					></a>
 					<ul>
 						<li><a href="../topics/MienBac.html">Miền Bắc</a></li>
-						<li><a href="#">Miền Trung</a></li>
-						<li><a href="#">Miền Nam</a></li>
+						<li><a href="../topics/MienTrung.html">Miền Trung</a></li>
+						<li><a href="../topics/MienNam.html">Miền Nam</a></li>
 					</ul>
 				</li>
 				<li><a href="#About">About</a></li>
@@ -97,151 +100,113 @@
 				<!-- Main Content -->
 				<div class="main-content single change-bg">
 					<h1 class="post-title swap-color">
-						This is the title of the Post
+						Đại Nội Huế – Khám phá lịch sử chốn cung đình triều Nguyễn
 					</h1>
 
 					<div class="post-content">
 						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Recusandae, dicta dolores architecto exercitationem quaerat
-							voluptatibus?
+							Đại Nội Huế, hay còn gọi là Hoàng thành Huế, là một trong
+							những di sản văn hóa thế giới được UNESCO công nhận. Nằm ở
+							trung tâm thành phố Huế, Đại Nội là quần thể kiến trúc cung
+							đình đồ sộ, là nơi sinh sống và làm việc của các vua triều
+							Nguyễn từ thế kỷ 19 đến đầu thế kỷ 20.
 						</p>
 						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Minima vero ex quibusdam incidunt quos corrupti. Natus
-							placeat itaque quam molestias voluptatibus. Provident,
-							possimus doloribus rerum illo illum fuga laborum excepturi?
+							Khu vực Đại Nội được chia thành hai phần chính: Hoàng thành
+							và Tử Cấm thành. Hoàng thành là nơi diễn ra các nghi lễ
+							quan trọng của triều đình, bao gồm các công trình nổi bật
+							như Ngọ Môn, Điện Thái Hòa, và Hiển Lâm Các. Tử Cấm thành
+							nằm bên trong Hoàng thành, là nơi ở và làm việc của vua và
+							hoàng gia.
+						</p>
+						<h2>Ngọ Môn – Cổng chính của Hoàng thành</h2>
+						<img
+							src="https://static.vinwonders.com/2023/02/ngo-mon-hue-1.jpg"
+							alt=""
+							class="img-post"
+						/>
+						<p>
+							Ngọ Môn là cổng chính và cũng là biểu tượng của Hoàng thành
+							Huế. Được xây dựng vào năm 1833 dưới triều vua Minh Mạng,
+							Ngọ Môn gồm hai phần: đài chính và lầu Ngũ Phụng. Từ Ngọ
+							Môn, du khách có thể nhìn thấy toàn cảnh Đại Nội và sông
+							Hương thơ mộng.
+						</p>
+						<h2>
+							Điện Thái Hòa – Nơi thiết triều và tổ chức các nghi lễ quan
+							trọng
+						</h2>
+						<img
+							src="https://laque.vn/wp-content/uploads/2020/05/dien-thai-hoa-2.jpg"
+							alt=""
+							class="img-post"
+						/>
+						<p>
+							Điện Thái Hòa là công trình lớn nhất và quan trọng nhất
+							trong Hoàng thành. Đây là nơi diễn ra các buổi thiết triều,
+							tiếp đón sứ thần và tổ chức các nghi lễ trọng đại của triều
+							đình. Kiến trúc của Điện Thái Hòa mang đậm nét văn hóa và
+							nghệ thuật của triều Nguyễn, với những hoa văn chạm khắc
+							tinh xảo và các bức tranh tường tuyệt đẹp.
+						</p>
+						<h2>Hiển Lâm Các – Đài kỷ niệm các công thần</h2>
+						<img
+							src="http://redsvn.net/wp-content/uploads/2022/11/Hien-Lam-Cac-04.jpg"
+							alt=""
+							class="img-post"
+						/>
+						<p>
+							Hiển Lâm Các là công trình cao nhất trong Hoàng thành, được
+							xây dựng để tưởng nhớ công lao của các công thần triều
+							Nguyễn. Đài Hiển Lâm gồm ba tầng, mỗi tầng đều được trang
+							trí bằng các họa tiết hoa văn và tượng đài uy nghiêm.
+						</p>
+						<h2>Khám phá Tử Cấm thành</h2>
+						<img
+							src="http://media.dulich24.com.vn/diemden/tu-cam-thanh-hue-5561/342a730c-ebb2-4569-9011-1375f49b9256.jpg"
+							alt=""
+							class="img-post"
+						/>
+						<p>
+							Tử Cấm thành là khu vực nội cung, nơi sinh sống của vua và
+							hoàng gia. Được bao quanh bởi tường thành kiên cố, Tử Cấm
+							thành có nhiều cung điện và khu vườn đẹp mắt như Cung Diên
+							Thọ, Cung Trường Sanh và Thế Miếu. Du khách khi bước vào Tử
+							Cấm thành sẽ cảm nhận được không khí yên bình và trang
+							nghiêm, như bước vào một thế giới khác giữa lòng thành phố.
+						</p>
+						<h2>Tham quan và trải nghiệm tại Đại Nội</h2>
+						<img
+							src="https://media-cdn-v2.laodong.vn/Storage/NewsPortal/2022/3/20/1025518/Du-Lich-Hue-20.jpg"
+							alt=""
+							class="img-post"
+						/>
+						<p>
+							Để tham quan Đại Nội Huế, du khách có thể dành một ngày để
+							khám phá hết các công trình kiến trúc và tìm hiểu về lịch
+							sử triều Nguyễn. Ngoài ra, du khách còn có thể tham gia các
+							hoạt động trải nghiệm như mặc trang phục cung đình, chụp
+							ảnh kỷ niệm, và thưởng thức các món ăn đặc sản Huế.
 						</p>
 						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Veritatis nulla quae earum culpa blanditiis voluptate quos
-							excepturi officiis, molestiae necessitatibus quibusdam
-							fugit tempora voluptatem beatae! Minima dolorum assumenda
-							eligendi, voluptates dolor ab, optio deleniti nihil,
-							veritatis culpa ad. Quis, fuga.
+							Đừng quên ghé thăm Đại Nội Huế vào buổi tối để chiêm ngưỡng
+							vẻ đẹp lung linh của Hoàng thành khi đèn đêm bật sáng. Đây
+							chắc chắn sẽ là một trải nghiệm khó quên cho bất kỳ ai đến
+							với Huế.
 						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Rerum, repellat.
-						</p>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Recusandae, dicta dolores architecto exercitationem quaerat
-							voluptatibus?
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Minima vero ex quibusdam incidunt quos corrupti. Natus
-							placeat itaque quam molestias voluptatibus. Provident,
-							possimus doloribus rerum illo illum fuga laborum excepturi?
-						</p>
-						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Veritatis nulla quae earum culpa blanditiis voluptate quos
-							excepturi officiis, molestiae necessitatibus quibusdam
-							fugit tempora voluptatem beatae! Minima dolorum assumenda
-							eligendi, voluptates dolor ab, optio deleniti nihil,
-							veritatis culpa ad. Quis, fuga.
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Rerum, repellat.
-						</p>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Recusandae, dicta dolores architecto exercitationem quaerat
-							voluptatibus?
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Minima vero ex quibusdam incidunt quos corrupti. Natus
-							placeat itaque quam molestias voluptatibus. Provident,
-							possimus doloribus rerum illo illum fuga laborum excepturi?
-						</p>
-						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Veritatis nulla quae earum culpa blanditiis voluptate quos
-							excepturi officiis, molestiae necessitatibus quibusdam
-							fugit tempora voluptatem beatae! Minima dolorum assumenda
-							eligendi, voluptates dolor ab, optio deleniti nihil,
-							veritatis culpa ad. Quis, fuga.
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Rerum, repellat.
-						</p>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Recusandae, dicta dolores architecto exercitationem quaerat
-							voluptatibus?
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Minima vero ex quibusdam incidunt quos corrupti. Natus
-							placeat itaque quam molestias voluptatibus. Provident,
-							possimus doloribus rerum illo illum fuga laborum excepturi?
-						</p>
-						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Veritatis nulla quae earum culpa blanditiis voluptate quos
-							excepturi officiis, molestiae necessitatibus quibusdam
-							fugit tempora voluptatem beatae! Minima dolorum assumenda
-							eligendi, voluptates dolor ab, optio deleniti nihil,
-							veritatis culpa ad. Quis, fuga.
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Rerum, repellat.
-						</p>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Recusandae, dicta dolores architecto exercitationem quaerat
-							voluptatibus?
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Minima vero ex quibusdam incidunt quos corrupti. Natus
-							placeat itaque quam molestias voluptatibus. Provident,
-							possimus doloribus rerum illo illum fuga laborum excepturi?
-						</p>
-						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Veritatis nulla quae earum culpa blanditiis voluptate quos
-							excepturi officiis, molestiae necessitatibus quibusdam
-							fugit tempora voluptatem beatae! Minima dolorum assumenda
-							eligendi, voluptates dolor ab, optio deleniti nihil,
-							veritatis culpa ad. Quis, fuga.
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Rerum, repellat.
-						</p>
-						<p>
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Recusandae, dicta dolores architecto exercitationem quaerat
-							voluptatibus?
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-							Minima vero ex quibusdam incidunt quos corrupti. Natus
-							placeat itaque quam molestias voluptatibus. Provident,
-							possimus doloribus rerum illo illum fuga laborum excepturi?
-						</p>
-						<p>
-							Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-							Veritatis nulla quae earum culpa blanditiis voluptate quos
-							excepturi officiis, molestiae necessitatibus quibusdam
-							fugit tempora voluptatem beatae! Minima dolorum assumenda
-							eligendi, voluptates dolor ab, optio deleniti nihil,
-							veritatis culpa ad. Quis, fuga.
-						</p>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Rerum, repellat.
-						</p>
+						<div
+							class="fb-like"
+							data-href="http://127.0.0.1:5501/TravelBlog/posts/DNHue.html"
+							data-width=""
+							data-height=""
+							data-layout="standard"
+							data-action="like"
+							data-size="small"
+							data-share="true"
+							style="margin-top: 10px"
+						></div>
 					</div>
 				</div>
-				<!-- // Main Content -->
 
 				<div class="sidebar single">
 					<div class="section change-bg">
@@ -264,17 +229,6 @@
 								>
 							</blockquote>
 						</div>
-						<div
-							class="fb-like"
-							data-href="http://127.0.0.1:5501/TravelBlog/posts/single.html"
-							data-width=""
-							data-height=""
-							data-layout="standard"
-							data-action="like"
-							data-size="small"
-							data-share="true"
-							style="margin-top: 10px"
-						></div>
 					</div>
 
 					<div class="section popular change-bg">
@@ -290,7 +244,7 @@
 						</div>
 						<div class="post clearfix">
 							<img src="../img/EiffelTower.png" alt="" />
-							<a href="../posts/Eiffel.html" class="title"
+							<a href="#" class="title"
 								><h4 class="swap-color">
 									Tháp Eiffel - Địa điểm du lịch lý tưởng trên đất Pháp
 								</h4></a
@@ -347,7 +301,7 @@
 		<!-- Facebook Comments Plugin -->
 		<div
 			class="fb-comments"
-			data-href="http://127.0.0.1:5501/TravelBlog/posts/single.html"
+			data-href="http://127.0.0.1:5501/TravelBlog/posts/DNHue.html"
 			data-width="100%"
 			data-numposts="100"
 			data-colorscheme="light"
@@ -355,6 +309,7 @@
 
 		<!-- Load Facebook SDK for JavaScript -->
 		<div id="fb-root"></div>
+
 		<!-- Footer -->
 
 		<footer>
@@ -445,7 +400,7 @@
 				}
 				js = d.createElement(s);
 				js.id = id;
-				js.src = 'https://connect.facebook.net/en_Es/sdk.js';
+				js.src = 'https://connect.facebook.net/vi_VN/sdk.js';
 				fjs.parentNode.insertBefore(js, fjs);
 			})(document, 'script', 'facebook-jssdk');
 		</script>
