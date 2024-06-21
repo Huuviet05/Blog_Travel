@@ -193,8 +193,8 @@ function updatePagination(totalPages) {
 // autocomplete - search
 
 let availableKeywords = [
-	{ keyword: 'Tháp Eiffel', url: '../posts/single.html' },
-	{ keyword: 'Đại Nội Huế', url: '../posts/single.html' },
+	{ keyword: 'Tháp Eiffel', url: '../posts/Eiffel.html' },
+	{ keyword: 'Đại Nội Huế', url: '../posts/DNHue.html' },
 	{ keyword: 'Hawaii', url: '../posts/single.html' },
 	{
 		keyword: 'Tour Nepal – Hành Trình Himalaya',
