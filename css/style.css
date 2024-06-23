@@ -1064,7 +1064,7 @@ footer .bottom-details .bottom-text a {
 
 @media only screen and (max-width: 770px) {
 	header {
-		position: relative; /* Change to relative */
+		/*position: relative;  Change to relative */
 		z-index: 11;
 	}
 
@@ -1139,6 +1139,7 @@ footer .bottom-details .bottom-text a {
 
 	.content .main-content .post .post-preview {
 		width: 100%;
+		padding-left: 0;
 	}
 	.content .main-content .post .read-more {
 		position: static;

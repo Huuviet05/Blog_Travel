@@ -195,14 +195,14 @@ function updatePagination(totalPages) {
 let availableKeywords = [
 	{ keyword: 'Tháp Eiffel', url: '../posts/Eiffel.html' },
 	{ keyword: 'Đại Nội Huế', url: '../posts/DNHue.html' },
-	{ keyword: 'Hawaii', url: '../posts/single.html' },
+	{ keyword: 'Hawaii', url: '../posts/Hawaii.html' },
 	{
 		keyword: 'Tour Nepal – Hành Trình Himalaya',
-		url: '../posts/single.html',
+		url: '../posts/Himalaya.html',
 	},
 	{
 		keyword: 'Chùa Chureito - Núi Phú Sỹ, Nhật Bản',
-		url: '../posts/single.html',
+		url: '../posts/PhuSy.html',
 	},
 	{
 		keyword: 'VinWonders Nha Trang - Công viên giải trí của những kỷ lục',
@@ -210,7 +210,7 @@ let availableKeywords = [
 	},
 	{
 		keyword: 'Bán Đảo Sơn Trà - Đà Nẵng',
-		url: '../posts/single.html',
+		url: '../posts/SonTra.html',
 	},
 	{ keyword: 'Sapa - Lào Cai', url: '../posts/single.html' },
 	{ keyword: 'Biển Mỹ Khê - Đà Nẵng', url: '../posts/single.html' },
@@ -263,6 +263,91 @@ let availableKeywords = [
 	},
 	{
 		keyword: 'Thác Bản Giốc - Cao Bằng',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Bà Nà Hills - Đà Nẵng',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Cù Lao Chàm - Hội An',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Đảo Lý Sơn - Quảng Ngãi',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Phong Nha Kẻ Bàng - Quảng Bình',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Phố cổ Hội An - Quảng Nam',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Thánh địa Mỹ Sơn - Quảng Nam',
+		url: '../posts/single.html',
+	},
+
+	{
+		keyword: 'Lăng Khải Định - Huế',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Đảo Phú Quý - Bình Thuận',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Mũi Né - Phan Thiết',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Ghềnh đá đĩa - Phú Yên',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Chùa Bà Châu Đốc - An Giang',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Tượng Chúa Ki-tô Vua - Vũng Tàu',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Cần Thơ - Thủ phủ miền Tây',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Bến Tre - Xứ dừa',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Đảo Phú Quốc - Kiên Giang',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Chợ Bến Thành - TP. Hồ Chí Minh',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Chợ Nổi Cái Răng - Cần Thơ',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Mũi Cà Mau - Cà Mau',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Vũng Tàu - Bà Rịa Vũng Tàu',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Côn Đảo - Bà Rịa Vũng Tàu',
+		url: '../posts/single.html',
+	},
+	{
+		keyword: 'Tháp Mười - Đồng Tháp',
 		url: '../posts/single.html',
 	},
 ];
