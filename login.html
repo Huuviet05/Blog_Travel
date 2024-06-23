@@ -77,13 +77,14 @@
 						<div class="forgot-pass">
 							<a href="#">forgot password?</a>
 						</div>
-						<button type="submit" class="btn">
+						<!-- <button type="submit" class="btn">
 							<a
 								href="index.html"
 								style="text-decoration: none; color: inherit"
 								>login</a
 							>
-						</button>
+						</button> -->
+						<button type="submit" class="btn">login</button>
 						<div class="link">
 							<p>
 								Don't have an account?<a href="#" class="signup-link">
@@ -161,6 +162,11 @@
 
 				// Nếu tất cả các kiểm tra đều đạt, cho phép submit form
 				alert('Registration successful!');
+
+				usernameInput.value = '';
+				emailInput.value = '';
+				passwordInput.value = '';
+				confirmPasswordInput.value = '';
 				signUpForm.submit();
 			});
 
@@ -182,17 +188,15 @@
 					alert('Password must be at least 6 characters long.');
 					return;
 				}
-				// Kiểm tra xác nhận mật khẩu
-				if (passwordInput.value !== confirmPasswordInput.value) {
-					alert('Passwords do not match. Please try again.');
-					return;
-				}
+
+				alert('Login successful!');
+				window.location.href = 'index.html';
 
 				// Thực hiện các kiểm tra đăng nhập tại đây
 				// Ví dụ: Gửi yêu cầu đăng nhập lên server và kiểm tra kết quả
 				// Nếu đăng nhập thành công, cho phép submit form
-				alert('Login successful!');
-				signInForm.submit();
+				// alert('Login successful!');
+				// signInForm.submit();
 			});
 		</script>
 	</body>
